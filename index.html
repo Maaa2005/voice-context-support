@@ -3,80 +3,203 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>サポート | Voice Context</title>
-<link rel="stylesheet" href="style.css">
+<title>Voice Context — 対面の会話を、AIが使える形に</title>
+<meta name="description" content="対面で話したことを、決定事項・やること・背景に分けて残すiPhoneアプリ。会話は開発者のサーバーを経由せず、あなたの端末とあなた自身のAIアカウントだけで完結します。">
+<meta property="og:title" content="Voice Context">
+<meta property="og:description" content="対面の会話を、AIがそのまま読める形にして残す。">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 fill=%27%23f7f5f0%27/%3E%3Cg fill=%27%23b8352a%27%3E%3Crect x=%275%27 y=%2713%27 width=%272.6%27 height=%276%27 rx=%271.3%27/%3E%3Crect x=%2710%27 y=%279%27 width=%272.6%27 height=%2714%27 rx=%271.3%27/%3E%3Crect x=%2715%27 y=%275%27 width=%272.6%27 height=%2722%27 rx=%271.3%27/%3E%3Crect x=%2720%27 y=%279%27 width=%272.6%27 height=%2714%27 rx=%271.3%27/%3E%3Crect x=%2725%27 y=%2713%27 width=%272.6%27 height=%276%27 rx=%271.3%27/%3E%3C/g%3E%3C/svg%3E">
+<meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131310" media="(prefers-color-scheme: dark)">
+<link rel="stylesheet" href="site.css">
 </head>
 <body>
-<div class="wrap">
-<header>
-  <p class="app">Voice Context</p>
-  <h1>サポート</h1>
-  <p class="meta">対面の会話を、AIが使える形に</p>
-  <nav><a href="privacy.html">プライバシーポリシー</a><a href="terms.html">利用規約</a><a class="lang" href="en/">English</a></nav>
-</header>
 
-<p>Voice Contextは、対面で話したことを録音・文字起こしし、決定事項・やること・背景に分けて残すアプリです。会話は開発者のサーバーを経由せず、あなたの端末と、あなた自身が設定したAI環境だけで完結します。</p>
+<div class="shell">
+  <header class="masthead">
+    <a class="wordmark" href="./">VOICE CONTEXT</a>
+    <nav>
+      <a href="#what">残るもの</a>
+      <a href="#privacy">プライバシー</a>
+      <a href="#limits">制約</a>
+      <a href="support/">サポート</a>
+      <a class="lang-link" href="en/">EN</a>
+    </nav>
+  </header>
 
-<h2>お問い合わせ</h2>
-<p>不具合の報告、ご要望、その他のお問い合わせは次のアドレスまでお送りください。原則として3営業日以内に返信します。</p>
-<p><a href="mailto:mtk.zin5ri@gmail.com">mtk.zin5ri@gmail.com</a></p>
-<p>不具合の報告では、次の情報を添えていただけると調査が早くなります。</p>
-<ul>
-  <li>iPhoneの機種とiOSのバージョン</li>
-  <li>Voice Contextのバージョン（App Storeのアプリページで確認できます）</li>
-  <li>何をしたときに、何が起きたか</li>
-</ul>
-<p class="note">会話の内容そのものを送る必要はありません。お問い合わせに際して、録音や文字起こしの中身を共有しないようお願いします。</p>
+  <div class="hero">
+    <div>
+      <p class="eyebrow rise" style="--d:0ms">iPhone · 近日公開</p>
+      <h1 class="rise" style="--d:80ms">対面で話したことは、<br>誰も<em>記録していない</em>。</h1>
+      <p class="lede rise" style="--d:180ms">
+        オンラインの会議は記録が残るのに、その場で決まったことは話し終えた瞬間から薄れていきます。
+        Voice Contextは、対面の会話をAIがそのまま読める形にして残します。
+      </p>
+      <div class="hero-actions rise" style="--d:260ms">
+        <span class="badge" aria-disabled="true">
+          <span>App Store</span>
+          <span>審査申請の準備中</span>
+        </span>
+        <p class="hero-note">iOS 26以降。日本語の会話に対応しています。</p>
+      </div>
+    </div>
+    <div class="device rise" style="--d:340ms">
+      <img src="assets/2-detail.png" width="880" height="1912"
+           alt="会話の詳細画面。要約、決定事項、担当者と期限のついたやること、重要な背景が並んでいる。">
+    </div>
+  </div>
 
-<h2>よくある質問</h2>
+  <section id="problem">
+    <div class="section-head">
+      <p class="section-num rise">01</p>
+      <h2 class="rise">経緯の説明から<br>始めなくていい</h2>
+    </div>
+    <div class="section-body">
+      <p class="pull rise">
+        あとでAIに相談しようとすると、まず経緯の説明から始めることになる。
+        誰が何を言ったか、いつまでの話だったか、なぜその案に決まったか。
+        思い出しながら打ち込むその時間が、毎回かかる。
+      </p>
+      <p class="pull-attrib rise">— このアプリが無くそうとしているもの</p>
+    </div>
+  </section>
 
-<h3>録音した音声は保存されますか</h3>
-<p>保存しません。音声は文字起こしのために処理されるだけで、ファイルとしては残りません。端末に残るのは文字起こしテキストと、そこから作られた構造化データです。</p>
+  <section id="what">
+    <div class="section-head">
+      <p class="section-num rise">02</p>
+      <h2 class="rise">会話が、構造になって残る</h2>
+      <p class="rise">録音を止めると、話した内容が次の形に整理されます。あとから効いてくる条件も、背景として残ります。</p>
+    </div>
+    <div class="section-body">
+      <ul class="fields rise">
+        <li><dfn>要約</dfn><span>何の話だったのかが2〜5文で分かる</span></li>
+        <li><dfn>決定事項</dfn><span>提案ではなく、実際に合意されたことだけ</span></li>
+        <li><dfn>やること</dfn><span>担当者と期限つき。分からない項目は空のまま</span></li>
+        <li><dfn>重要な背景</dfn><span>理由・制約・前提。後の判断を変えるもの</span></li>
+        <li><dfn>未解決の論点</dfn><span>その場で決まらなかったこと</span></li>
+        <li><dfn>キーワード</dfn><span>あとから探すための手がかり</span></li>
+      </ul>
+      <div class="callout rise">
+        <p>「見積もりの減額は難しいが、納期を2週間延ばせば対応可能」——こうした条件は、決定事項ではなく<strong>背景</strong>として残ります。次にこの話題が出たとき、効いてくるのはこちらです。</p>
+      </div>
+    </div>
+  </section>
 
-<h3>会話の内容は開発者に送られますか</h3>
-<p>送られません。開発者が運用するサーバーは存在しません。詳しくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p>
+  <section id="mid">
+    <div class="showcase">
+      <div class="showcase-text">
+        <h3 class="rise">会議の途中でも渡せる</h3>
+        <p class="rise">長い打ち合わせで、終わるまで待つ必要はありません。「いま送る」を押せば、録音を続けたまま、そこまでの会話が形になります。その場でAIに意見を求められます。</p>
+        <p class="rise">開始も同じです。コントロールセンター、ロック画面、ショートカット、Siriから録音を始められるので、アプリを探している間に会話が始まってしまうことが減ります。</p>
+      </div>
+      <div class="device rise">
+        <img src="assets/3-recorder.png" width="880" height="1912" loading="lazy"
+             alt="録音画面。ライブ文字起こしと、録音ボタン、「音声ファイルは保存されません」の表示。">
+      </div>
+    </div>
+  </section>
 
-<h3>要約や決定事項が生成されません</h3>
-<p>構造化の処理には送信先の設定が必要です。設定画面から、次のいずれかを設定してください。</p>
-<ul>
-  <li><strong>お使いのMac</strong>を使う場合: Mac側のアプリを起動し、表示されたペアリング用のコードをiPhoneで読み取ります。iPhoneとMacが同じネットワークにつながっている必要があります。</li>
-  <li><strong>Gateway</strong>を使う場合: 設定画面にGatewayのURLとトークンを入力します。</li>
-</ul>
-<p>どちらも未設定の場合、録音と文字起こしまでは動作しますが、構造化は行われません。</p>
+  <section id="privacy">
+    <div class="section-head">
+      <p class="section-num rise">03</p>
+      <h2 class="rise">開発者は、会話を受け取りません</h2>
+      <p class="rise">これは方針の表明ではなく、構成そのものです。開発者が運用するサーバーは存在しません。</p>
+    </div>
+    <div class="section-body" style="max-width:none">
+      <div class="ledger rise">
+        <div>
+          <h3>録音した音声</h3>
+          <p>保存しません。文字起こしのために処理するだけです。</p>
+        </div>
+        <div>
+          <h3>文字起こし</h3>
+          <p>あなたのiPhoneの中に残ります。</p>
+        </div>
+        <div>
+          <h3>構造化の処理</h3>
+          <p>あなた自身のMac、またはあなたが設定した送信先で行われます。</p>
+        </div>
+        <div>
+          <h3>開発者に届くもの</h3>
+          <p>ありません。利用状況も含めて、何も送っていません。</p>
+        </div>
+      </div>
+      <div class="callout rise">
+        <p>送信先に届いたあとの取り扱いは、その提供者とあなたとの間の条件によります。AIサービスを使う場合は、学習利用のオプトアウト設定を含め、ご自身でご確認ください。</p>
+        <p><a href="privacy.html">プライバシーポリシーを読む →</a></p>
+      </div>
+    </div>
+  </section>
 
-<h3>Macに送れません</h3>
-<p>次の順で確認してください。</p>
-<ul>
-  <li>iPhoneとMacが同じWi-Fiにつながっているか（モバイル通信になっていないか）</li>
-  <li>Mac側のアプリが起動しているか</li>
-  <li>Macがスリープしていないか</li>
-  <li>iOSの「ローカルネットワーク」の許可がVoice Contextに与えられているか（設定 &gt; Voice Context）</li>
-</ul>
-<p>それでも解決しない場合は、いったんペアリングを解除し、Mac側で新しいペアリングURIを発行してやり直してください。</p>
+  <section id="setup">
+    <div class="showcase flip">
+      <div class="showcase-text">
+        <h3 class="rise">使い始めるのに必要なもの</h3>
+        <p class="rise">構造化には、送信先の設定が必要です。あなたのMac上のAIに繋ぐか、ご自身で用意したGatewayのURLを入れるかのどちらかです。</p>
+        <p class="rise">どちらも設定していない場合、録音と文字起こしまでは動作しますが、要約や決定事項は生成されません。<strong>アプリ単体では文字起こしまで</strong>、と考えてください。</p>
+      </div>
+      <div class="device rise">
+        <img src="assets/4-settings.png" width="880" height="1912" loading="lazy"
+             alt="設定画面。DesktopとGatewayの接続状態、認識させたい固有語、データとプライバシーの項目。">
+      </div>
+    </div>
+  </section>
 
-<h3>録音が始まりません</h3>
-<p>設定 &gt; Voice Context で、マイクと音声認識の許可がオンになっているか確認してください。また、初回起動時の説明を最後まで読み終えるまで録音は開始できません。</p>
-
-<h3>途中まででAIに渡したい</h3>
-<p>録音画面の「いま送る」を押すと、録音を続けたまま、そこまでの会話が構造化されます。</p>
-
-<h3>対応言語は</h3>
-<p>アプリの表示は日本語と英語に対応しています。端末の言語設定に従います。</p>
-<p>会話の文字起こしは日本語を対象としています。</p>
-
-<h3>データを消したい</h3>
-<p>会話の記録はアプリ内で個別に削除できます。アプリを端末から削除すると、保存されているデータはすべて失われます。</p>
-
-<h2>使う前に知っておいてください</h2>
-<ul>
-  <li>その場にいる全員に、録音することとAIサービスへ送ることを事前に伝えてください。所属先や地域の規則・法令に従う責任は利用者にあります。</li>
-  <li>音声認識には誤変換が残ります。要約はAIが生成したもので、事実と異なる場合があります。逐語録として、また証拠としての用途には使えません。</li>
-</ul>
-
-<footer>
-  <p>Voice Context — 開発者: Masashi Nakamura<br>
-  <a href="privacy.html">プライバシーポリシー</a> · <a href="terms.html">利用規約</a></p>
-</footer>
+  <section id="limits">
+    <div class="section-head">
+      <p class="section-num rise">04</p>
+      <h2 class="rise">使う前に<br>知っておいてください</h2>
+      <p class="rise">アプリを開いた最初の画面でも、同じことを説明します。読み飛ばせないようにしてあります。</p>
+    </div>
+    <div class="section-body">
+      <ul class="limits">
+        <li class="rise"><strong>同席者への説明は、あなたの責任です。</strong>その場にいる全員に、録音することとAIサービスへ送ることを事前に伝えてください。所属先・学校・取引先の規則や、地域の法令に従う責任は利用者にあります。このアプリは録音の可否を判定せず、録音を許されたものにもしません。</li>
+        <li class="rise"><strong>正確さは保証されません。</strong>音声認識には誤変換が残ります。要約はAIが生成したもので、事実と異なる場合があります。逐語録として、また証拠としての用途には使えません。</li>
+        <li class="rise"><strong>人名や会社名は、伏せずに送ります。</strong>匿名化はしていません。送っていい会話かどうかは、送る前に判断してください。</li>
+      </ul>
+    </div>
+  </section>
 </div>
+
+<footer class="site-footer">
+  <div class="shell footer-grid">
+    <div>
+      <p>Voice Context — 対面の会話を、AIが使える形に。</p>
+      <p class="fine">開発者: Masashi Nakamura</p>
+    </div>
+    <nav>
+      <a href="support/">サポート</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="terms.html">利用規約</a>
+      <a href="en/">English</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  // One directed reveal. Elements are visible without JS — the class only
+  // arrives once the observer is wired, so a failed script cannot hide the page.
+  (function () {
+    var nodes = document.querySelectorAll('.rise');
+    if (!('IntersectionObserver' in window) ||
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      nodes.forEach(function (n) { n.classList.add('in'); });
+      return;
+    }
+    var hero = document.querySelectorAll('.hero .rise');
+    requestAnimationFrame(function () {
+      hero.forEach(function (n) { n.classList.add('in'); });
+    });
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      });
+    }, { rootMargin: '0px 0px -12% 0px' });
+    nodes.forEach(function (n) { if (!n.closest('.hero')) io.observe(n); });
+  })();
+</script>
+
 </body>
 </html>

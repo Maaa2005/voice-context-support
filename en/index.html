@@ -3,80 +3,204 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Support | Voice Context</title>
-<link rel="stylesheet" href="../style.css">
+<title>Voice Context — In-person conversations, in a form AI can use</title>
+<meta name="description" content="An iPhone app that keeps what you said in person as decisions, action items, and background. Your conversations never pass through the developer's servers — only your device and your own AI account.">
+<meta property="og:title" content="Voice Context">
+<meta property="og:description" content="Keeps your in-person conversations in a form an AI can read.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 fill=%27%23f7f5f0%27/%3E%3Cg fill=%27%23b8352a%27%3E%3Crect x=%275%27 y=%2713%27 width=%272.6%27 height=%276%27 rx=%271.3%27/%3E%3Crect x=%2710%27 y=%279%27 width=%272.6%27 height=%2714%27 rx=%271.3%27/%3E%3Crect x=%2715%27 y=%275%27 width=%272.6%27 height=%2722%27 rx=%271.3%27/%3E%3Crect x=%2720%27 y=%279%27 width=%272.6%27 height=%2714%27 rx=%271.3%27/%3E%3Crect x=%2725%27 y=%2713%27 width=%272.6%27 height=%276%27 rx=%271.3%27/%3E%3C/g%3E%3C/svg%3E">
+<meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131310" media="(prefers-color-scheme: dark)">
+<link rel="stylesheet" href="../site.css">
 </head>
 <body>
-<div class="wrap">
-<header>
-  <p class="app">Voice Context</p>
-  <h1>Support</h1>
-  <p class="meta">Turn the conversations you have in person into something AI can use</p>
-  <nav><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><a class="lang" href="../">日本語</a></nav>
-</header>
 
-<p>Voice Context records and transcribes the conversations you have in person, then leaves them behind as decisions, action items, and background. Your conversations never pass through a server run by the developer — they stay between your device and the AI environment you set up yourself.</p>
+<div class="shell">
+  <header class="masthead">
+    <a class="wordmark" href="./">VOICE CONTEXT</a>
+    <nav>
+      <a href="#what">What is kept</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#limits">Limits</a>
+      <a href="support/">Support</a>
+      <a class="lang-link" href="../">日本語</a>
+    </nav>
+  </header>
 
-<h2>Contact</h2>
-<p>For bug reports, feature requests, and anything else, write to the address below. Replies normally arrive within three business days.</p>
-<p><a href="mailto:mtk.zin5ri@gmail.com">mtk.zin5ri@gmail.com</a></p>
-<p>Bug reports are easier to investigate with:</p>
-<ul>
-  <li>your iPhone model and iOS version</li>
-  <li>the version of Voice Context (shown on its App Store page)</li>
-  <li>what you did, and what happened</li>
-</ul>
-<p class="note">There is no need to send the contents of a conversation. Please do not share your recordings or transcripts when contacting support.</p>
+  <div class="hero">
+    <div>
+      <p class="eyebrow rise" style="--d:0ms">iPhone · Coming soon</p>
+      <h1 class="rise" style="--d:80ms">Nobody is <em>recording</em><br>the room you are in.</h1>
+      <p class="lede rise" style="--d:180ms">
+        Online meetings leave a record. What was decided in person starts fading
+        the moment the room empties. Voice Context keeps those conversations in a
+        form an AI can read.
+      </p>
+      <div class="hero-actions rise" style="--d:260ms">
+        <span class="badge" aria-disabled="true">
+          <span>App Store</span>
+          <span>Preparing for review</span>
+        </span>
+        <p class="hero-note">iOS 26 or later. Conversations are transcribed in Japanese.</p>
+      </div>
+    </div>
+    <div class="device rise" style="--d:340ms">
+      <img src="../assets/2-detail.png" width="880" height="1912"
+           alt="A conversation's detail screen, showing the summary, decisions, action items with owners and due dates, and important background.">
+    </div>
+  </div>
 
-<h2>Frequently asked questions</h2>
+  <section id="problem">
+    <div class="section-head">
+      <p class="section-num rise">01</p>
+      <h2 class="rise">Stop starting with<br>the backstory</h2>
+    </div>
+    <div class="section-body">
+      <p class="pull rise">
+        When you go to an AI for help, you begin by explaining the history.
+        Who said what, what the deadline was, why that option won.
+        Typing all that out from memory costs you time, every single time.
+      </p>
+      <p class="pull-attrib rise">— what this app exists to remove</p>
+    </div>
+  </section>
 
-<h3>Is the recorded audio saved?</h3>
-<p>No. Audio is processed for transcription and is never written to a file. What stays on your device is the transcript and the structured notes built from it.</p>
+  <section id="what">
+    <div class="section-head">
+      <p class="section-num rise">02</p>
+      <h2 class="rise">The conversation is kept as structure</h2>
+      <p class="rise">Stop the recording, and what was said is organized into the fields below. The conditions that matter later are kept as background.</p>
+    </div>
+    <div class="section-body">
+      <ul class="fields rise">
+        <li><dfn>Summary</dfn><span>Two to five sentences on what the conversation was</span></li>
+        <li><dfn>Decisions</dfn><span>Only what was actually agreed, not what was suggested</span></li>
+        <li><dfn>Action items</dfn><span>With an owner and a due date; left empty when unknown</span></li>
+        <li><dfn>Important background</dfn><span>Reasons, constraints, assumptions — what changes later calls</span></li>
+        <li><dfn>Open questions</dfn><span>What was not settled in the room</span></li>
+        <li><dfn>Keywords</dfn><span>Handles for finding it again</span></li>
+      </ul>
+      <div class="callout rise">
+        <p>"Cutting the quote isn't possible, but a two-week extension on delivery would work" — a condition like that is kept as <strong>background</strong>, not as a decision. It is the half that matters the next time the subject comes up.</p>
+      </div>
+    </div>
+  </section>
 
-<h3>Does the developer see my conversations?</h3>
-<p>No. There is no server operated by the developer. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
+  <section id="mid">
+    <div class="showcase">
+      <div class="showcase-text">
+        <h3 class="rise">Hand it over mid-meeting</h3>
+        <p class="rise">In a long discussion you do not have to wait for the end. Tap "Send now" and everything so far becomes structure while recording continues. You can ask an AI what it thinks right there.</p>
+        <p class="rise">Starting works the same way. Recording begins from Control Center, the Lock Screen, Shortcuts, or Siri — so fewer conversations get going while you are still hunting for the app.</p>
+      </div>
+      <div class="device rise">
+        <img src="../assets/3-recorder.png" width="880" height="1912" loading="lazy"
+             alt="The recording screen, showing the live transcript, the record button, and a note that no audio file is saved.">
+      </div>
+    </div>
+  </section>
 
-<h3>No summary or decisions are being generated</h3>
-<p>Structuring requires a destination. In Settings, configure one of the following.</p>
-<ul>
-  <li><strong>Your Mac:</strong> start the Mac app, then paste the pairing URI it shows into the "pairing URI" field on your iPhone. Both devices must be on the same network.</li>
-  <li><strong>A Gateway:</strong> enter the Gateway URL and token in Settings.</li>
-</ul>
-<p>With neither configured, recording and transcription still work, but no structuring happens.</p>
+  <section id="privacy">
+    <div class="section-head">
+      <p class="section-num rise">03</p>
+      <h2 class="rise">The developer never receives your conversations</h2>
+      <p class="rise">This is not a policy statement, it is the architecture. There is no server operated by the developer.</p>
+    </div>
+    <div class="section-body" style="max-width:none">
+      <div class="ledger rise">
+        <div>
+          <h3>Recorded audio</h3>
+          <p>Not stored. It is processed for transcription and nothing else.</p>
+        </div>
+        <div>
+          <h3>The transcript</h3>
+          <p>Stays on your iPhone.</p>
+        </div>
+        <div>
+          <h3>Structuring</h3>
+          <p>Runs on your own Mac, or on a destination you configure.</p>
+        </div>
+        <div>
+          <h3>What reaches the developer</h3>
+          <p>Nothing. Not the conversations, not your usage.</p>
+        </div>
+      </div>
+      <div class="callout rise">
+        <p>Once data reaches a destination you configured, its handling is governed by the terms between you and that provider. If you use an AI service, review its terms yourself, including any opt-out from training on your data.</p>
+        <p><a href="privacy.html">Read the privacy policy →</a></p>
+      </div>
+    </div>
+  </section>
 
-<h3>The app cannot reach my Mac</h3>
-<p>Check these in order.</p>
-<ul>
-  <li>Are the iPhone and the Mac on the same Wi-Fi network (not cellular)?</li>
-  <li>Is the Mac app running?</li>
-  <li>Is the Mac asleep?</li>
-  <li>Has Voice Context been granted the iOS "Local Network" permission (Settings &gt; Voice Context)?</li>
-</ul>
-<p>If it still fails, remove the pairing, issue a fresh pairing URI on the Mac, and pair again.</p>
+  <section id="setup">
+    <div class="showcase flip">
+      <div class="showcase-text">
+        <h3 class="rise">What you need to get started</h3>
+        <p class="rise">Structuring requires a destination: either an AI on your own Mac, or the URL of a Gateway you run yourself.</p>
+        <p class="rise">With neither configured, recording and transcription still work, but no summary or decisions are generated. <strong>On its own, the app goes as far as transcription.</strong></p>
+      </div>
+      <div class="device rise">
+        <img src="../assets/4-settings.png" width="880" height="1912" loading="lazy"
+             alt="The settings screen, showing desktop and Gateway connection status, recognition terms, and the data and privacy sections.">
+      </div>
+    </div>
+  </section>
 
-<h3>Recording will not start</h3>
-<p>In Settings &gt; Voice Context, confirm that microphone and speech recognition permissions are enabled. Recording is also unavailable until you have read through the first-run explanation.</p>
-
-<h3>Can I hand over a conversation before it ends?</h3>
-<p>Yes. Tap "Send now" on the recording screen and everything said so far is structured while recording continues.</p>
-
-<h3>Which languages are supported?</h3>
-<p>The interface is available in English and Japanese, following your device's language setting.</p>
-<p>Conversations are transcribed in Japanese.</p>
-
-<h3>How do I delete my data?</h3>
-<p>Delete individual conversation records inside the app. Deleting the app from your device removes everything it has stored.</p>
-
-<h2>Before you start</h2>
-<ul>
-  <li>Tell everyone present, in advance, that you are recording and that the transcript will be sent to an AI service. Complying with your organization's rules and your local laws is your responsibility.</li>
-  <li>Speech recognition produces errors, and summaries are generated by AI and may be inaccurate. Output cannot be used as a verbatim record or as evidence.</li>
-</ul>
-
-<footer>
-  <p>Voice Context — Developer: Masashi Nakamura<br>
-  <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a> · <a href="../">日本語</a></p>
-</footer>
+  <section id="limits">
+    <div class="section-head">
+      <p class="section-num rise">04</p>
+      <h2 class="rise">Before you use it</h2>
+      <p class="rise">The app says the same things on its first screen, and does not let you skip past them.</p>
+    </div>
+    <div class="section-body">
+      <ul class="limits">
+        <li class="rise"><strong>Telling the people present is your responsibility.</strong> Tell everyone in the room, in advance, that you are recording and that the transcript will be sent to an AI service. Complying with the rules of your employer, school, or clients, and with your local laws, is up to you. This app does not judge whether a recording is permitted, and using it does not make one lawful.</li>
+        <li class="rise"><strong>Accuracy is not guaranteed.</strong> Speech recognition leaves errors behind. Summaries are generated by AI and may not match the facts. They cannot be used as a verbatim record or as evidence.</li>
+        <li class="rise"><strong>Names of people and companies are sent as they are.</strong> Nothing is masked. Decide whether a conversation should be sent before you send it.</li>
+      </ul>
+    </div>
+  </section>
 </div>
+
+<footer class="site-footer">
+  <div class="shell footer-grid">
+    <div>
+      <p>Voice Context — in-person conversations, in a form AI can use.</p>
+      <p class="fine">Developer: Masashi Nakamura</p>
+    </div>
+    <nav>
+      <a href="support/">Support</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="../">日本語</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  // One directed reveal. Elements are visible without JS — the class only
+  // arrives once the observer is wired, so a failed script cannot hide the page.
+  (function () {
+    var nodes = document.querySelectorAll('.rise');
+    if (!('IntersectionObserver' in window) ||
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      nodes.forEach(function (n) { n.classList.add('in'); });
+      return;
+    }
+    var hero = document.querySelectorAll('.hero .rise');
+    requestAnimationFrame(function () {
+      hero.forEach(function (n) { n.classList.add('in'); });
+    });
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      });
+    }, { rootMargin: '0px 0px -12% 0px' });
+    nodes.forEach(function (n) { if (!n.closest('.hero')) io.observe(n); });
+  })();
+</script>
+
 </body>
 </html>
