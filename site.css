@@ -4,16 +4,17 @@
    so the page does not either. */
 
 :root {
-  --paper: #f7f5f0;
-  --paper-raised: #fffefb;
-  --paper-sunk: #efece4;
-  --ink: #1b1a16;
-  --ink-soft: #56534a;
-  --ink-faint: #8d8879;
-  --rule: #ddd8cb;
-  --rule-strong: #c3bdac;
-  --accent: #b8352a;
-  --accent-soft: #e8d8d4;
+  --paper: #f7f7f9;
+  --paper-raised: #ffffff;
+  --paper-sunk: #eeeef3;
+  --ink: #17171c;
+  --ink-soft: #52525e;
+  --ink-faint: #8a8a97;
+  --rule: #dedee6;
+  --rule-strong: #c2c2ce;
+  /* From the app icon: the wave's blue-violet, with its cyan as a second note. */
+  --accent: #3a2ef0;
+  --accent-2: #01bfee;
 
   --font-display: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, "Noto Serif JP", "Times New Roman", serif;
   --font-body: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Segoe UI", sans-serif;
@@ -26,30 +27,30 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --paper: #131310;
-    --paper-raised: #1c1b17;
-    --paper-sunk: #0e0e0c;
-    --ink: #efece3;
-    --ink-soft: #a9a596;
-    --ink-faint: #79756a;
-    --rule: #302e27;
-    --rule-strong: #46433a;
-    --accent: #e0685c;
-    --accent-soft: #3a2320;
+    --paper: #101014;
+    --paper-raised: #191920;
+    --paper-sunk: #0a0a0d;
+    --ink: #eceaf2;
+    --ink-soft: #a2a0ae;
+    --ink-faint: #74727f;
+    --rule: #2a2a33;
+    --rule-strong: #3e3e4a;
+    --accent: #8d82ff;
+    --accent-2: #4fd8f5;
   }
 }
 
 :root[data-theme="dark"] {
-  --paper: #131310;
-  --paper-raised: #1c1b17;
-  --paper-sunk: #0e0e0c;
-  --ink: #efece3;
-  --ink-soft: #a9a596;
-  --ink-faint: #79756a;
-  --rule: #302e27;
-  --rule-strong: #46433a;
-  --accent: #e0685c;
-  --accent-soft: #3a2320;
+  --paper: #101014;
+  --paper-raised: #191920;
+  --paper-sunk: #0a0a0d;
+  --ink: #eceaf2;
+  --ink-soft: #a2a0ae;
+  --ink-faint: #74727f;
+  --rule: #2a2a33;
+  --rule-strong: #3e3e4a;
+  --accent: #8d82ff;
+  --accent-2: #4fd8f5;
 }
 
 * { box-sizing: border-box; }
@@ -163,14 +164,15 @@ img { max-width: 100%; height: auto; display: block; }
 .eyebrow::before {
   content: "";
   width: 2.25rem;
-  height: 1px;
-  background: var(--accent);
+  height: 2px;
+  border-radius: 1px;
+  background: linear-gradient(90deg, var(--accent-2), var(--accent));
 }
 
 .hero h1 {
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: clamp(2rem, 5.6vw, 4.125rem);
+  font-size: clamp(2rem, 4.8vw, 3.5rem);
   /* Japanese headlines break mid-phrase by default; browsers that know how to
      break on phrase boundaries should. */
   word-break: auto-phrase;
@@ -286,6 +288,11 @@ section + section { border-top: 1px solid var(--rule); }
 }
 
 .section-num {
+  /* Placed explicitly. Without this the generic `.section-head p` rule below
+     also matched the number, took column 2, and pushed the heading into the
+     4.5rem column — where Japanese wraps one character per line. */
+  grid-column: 1;
+  grid-row: 1;
   font-family: var(--font-mono);
   font-size: 0.75rem;
   letter-spacing: 0.12em;
@@ -294,6 +301,8 @@ section + section { border-top: 1px solid var(--rule); }
 }
 
 .section-head h2 {
+  grid-column: 2;
+  grid-row: 1;
   font-family: var(--font-display);
   font-weight: 600;
   font-size: clamp(1.5rem, 3.2vw, 2.25rem);
@@ -303,7 +312,7 @@ section + section { border-top: 1px solid var(--rule); }
   text-wrap: balance;
 }
 
-.section-head p {
+.section-head p:not(.section-num) {
   grid-column: 2;
   margin: 1rem 0 0;
   color: var(--ink-soft);
@@ -314,8 +323,9 @@ section + section { border-top: 1px solid var(--rule); }
 
 @media (max-width: 760px) {
   .section-head { grid-template-columns: 1fr; gap: 0.5rem; }
-  .section-num { padding-top: 0; }
-  .section-head p { grid-column: 1; }
+  .section-num { padding-top: 0; grid-column: 1; grid-row: auto; }
+  .section-head h2 { grid-column: 1; grid-row: auto; }
+  .section-head p:not(.section-num) { grid-column: 1; }
   .section-body { margin-left: 0; }
 }
 
