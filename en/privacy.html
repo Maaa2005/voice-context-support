@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy | Voice Context</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap">
+<header>
+  <p class="app">Voice Context</p>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last updated: August 24, 2026 / Effective: August 24, 2026</p>
+  <nav><a href="./">Support</a><a href="terms.html">Terms of Use</a><a class="lang" href="../privacy.html">日本語</a></nav>
+</header>
+
+<p>Voice Context ("the App") records in-person conversations, transcribes them, and turns them into structured notes — decisions, action items, and background. The developer of the App ("the Developer") receives neither your conversations nor your usage data. This page describes where your data actually lives and where it is sent.</p>
+
+<h2>1. Information the Developer collects</h2>
+
+<p><strong>None.</strong> The Developer collects no personal information, no conversation content, no usage analytics, no crash logs, and no advertising identifiers. There is no server operated by the Developer, and the App never transmits anything to the Developer.</p>
+
+<p>The App contains no analytics, advertising, or tracking SDKs. Its App Store privacy declaration is "Data Not Collected."</p>
+
+<h2>2. Data handled on your device</h2>
+
+<table>
+  <tr><th>Data</th><th>Where it is stored</th><th>Retention</th></tr>
+  <tr><td>Transcript text</td><td>On-device app storage (SwiftData)</td><td>Until you delete it</td></tr>
+  <tr><td>Generated structured notes (summary, decisions, action items, background)</td><td>On-device app storage</td><td>Until you delete it</td></tr>
+  <tr><td>Recorded audio</td><td>Not stored</td><td>Processed transiently for transcription only</td></tr>
+  <tr><td>Destination settings (URL, pairing details)</td><td>On-device settings storage</td><td>Until you delete it</td></tr>
+  <tr><td>Access tokens and pairing keys</td><td>The device Keychain</td><td>Until you delete it</td></tr>
+</table>
+
+<p>Recording runs only when you explicitly start it. The App does not record in the background on its own.</p>
+
+<h3>Speech recognition</h3>
+<p>Transcription uses Apple's Speech framework and runs on your device. The App may contact Apple's servers to download recognition models; no audio or conversation content is sent as part of that. Apple's handling of any such data is governed by Apple's own privacy policy.</p>
+
+<h2>3. Sending to a destination you configure</h2>
+
+<p>Structuring is performed by <strong>a destination you configure yourself</strong>. If you configure none, the App stops after transcription and sends nothing anywhere. There are two kinds of destination.</p>
+
+<h3>(a) Your own Mac, over your local network</h3>
+<p>The App sends the transcript to your own Mac on the same network. The traffic does not traverse the internet and is protected by a key exchanged when you pair the devices. Processing takes place on that Mac.</p>
+
+<h3>(b) A Gateway you configure, over HTTPS</h3>
+<p>The App sends the transcript to a URL you enter. You choose that destination and you are responsible for it. In most setups it is a relay you run with your own API key, which passes the transcript on to an AI service such as OpenAI.</p>
+
+<p>What is sent: the transcript text, the language setting, and the start and end times of the conversation. Audio files, contacts, location, and device identifiers are never sent.</p>
+
+<div class="note">
+Once data reaches a destination you configured, its handling is governed by the terms between you and that destination's provider. The Developer neither controls nor supervises it. If you use an AI service, please review that service's terms yourself, including any opt-out from training on your data.
+</div>
+
+<h2>4. Sharing with third parties</h2>
+<p>Because the Developer holds no data, the Developer does not sell, share, or otherwise disclose it to third parties. The transmissions described above happen because of your own configuration and your own actions.</p>
+
+<h2>5. Deleting your data</h2>
+<p>You can delete individual conversation records inside the App. Deleting the App from your device removes the transcripts, structured notes, settings, and Keychain credentials stored on it. There is no data held by the Developer for you to request deletion of.</p>
+<p>To delete data that reached a destination you configured, contact whoever administers it — in most cases, you.</p>
+
+<h2>6. Your responsibilities when recording</h2>
+<p>Tell everyone present, in advance, that you are recording and that the transcript will be sent to an AI service. Complying with the rules of your employer, school, or clients, and with the laws of your jurisdiction, is your responsibility. The App does not judge whether a recording is permitted, and using it does not make a recording lawful.</p>
+
+<h2>7. Children's privacy</h2>
+<p>The App is not directed to children under 13. The Developer collects no personal information from any user.</p>
+
+<h2>8. Changes to this policy</h2>
+<p>If this policy changes, this page will be updated and the date at the top revised. If the change materially affects how data is handled, it will also be noted in the App's release notes.</p>
+
+<h2>9. Contact</h2>
+<p>Questions about this policy: <a href="mailto:mtk.zin5ri@gmail.com">mtk.zin5ri@gmail.com</a></p>
+
+<footer>
+  <p>Voice Context — Developer: Masashi Nakamura<br>
+  <a href="./">Support</a> · <a href="terms.html">Terms of Use</a> · <a href="../privacy.html">日本語</a></p>
+</footer>
+</div>
+</body>
+</html>
