@@ -11,7 +11,7 @@
 <header>
   <p class="app"><a href="./">Voice Context</a></p>
   <h1>Privacy Policy</h1>
-  <p class="meta">Last updated: August 24, 2026 / Effective: August 24, 2026</p>
+  <p class="meta">Last updated: October 26, 2026 / Effective: August 24, 2026</p>
   <nav><a href="./">Home</a><a href="support/">Support</a><a href="terms.html">Terms of Use</a><a class="lang" href="../privacy.html">日本語</a></nav>
 </header>
 
@@ -32,9 +32,13 @@
   <tr><td>Recorded audio</td><td>Not stored</td><td>Processed transiently for transcription only</td></tr>
   <tr><td>Destination settings (URL, pairing details)</td><td>On-device settings storage</td><td>Until you delete it</td></tr>
   <tr><td>Access tokens and pairing keys</td><td>The device Keychain</td><td>Until you delete it</td></tr>
+  <tr><td>Features of your enrolled voice (numbers used by Auto-detect, not the audio itself)</td><td>The device Keychain (not synced to other devices)</td><td>Until you delete it</td></tr>
 </table>
 
-<p>Recording runs only when you explicitly start it. The App does not record in the background on its own.</p>
+<p>Recording runs when you start it, and when Auto-detect (below) starts it.</p>
+
+<h3>Auto-detect</h3>
+<p>When you enroll your voice in Settings, Auto-detect is on by default and simply opening the App starts listening for your voice. It keeps listening after you switch to another app, lock the screen, or are interrupted by a phone call, and the microphone is in use the whole time. When your enrolled voice is heard, recording starts, and from then on the other person's voice is recorded too. A similar voice or a TV can start it, and while your voice cannot be checked — for example right after restarting your device — any voice can start it. The voice check runs on your device, and the features of your enrolled voice are never sent off it. Turning off Auto-detect on the recording screen stops the listening, and deleting your enrolled voice stops Auto-detect from running at all.</p>
 
 <h3>Speech recognition</h3>
 <p>Transcription uses Apple's Speech framework and runs on your device. The App may contact Apple's servers to download recognition models; no audio or conversation content is sent as part of that. Apple's handling of any such data is governed by Apple's own privacy policy.</p>
@@ -59,7 +63,7 @@ Once data reaches a destination you configured, its handling is governed by the 
 <p>Because the Developer holds no data, the Developer does not sell, share, or otherwise disclose it to third parties. The transmissions described above happen because of your own configuration and your own actions.</p>
 
 <h2>5. Deleting your data</h2>
-<p>You can delete individual conversation records inside the App. Deleting the App from your device removes the transcripts, structured notes, settings, and Keychain credentials stored on it. There is no data held by the Developer for you to request deletion of.</p>
+<p>You can delete individual conversation records inside the App. Deleting the App from your device removes the transcripts, structured notes, and settings stored on it. Access tokens, pairing keys, and the features of your enrolled voice are kept in the Keychain and may remain on the device after the App is deleted. To remove them, before deleting the App, tap Delete under Settings &gt; Start with my voice, Disconnect under Settings &gt; Desktop, and Delete the settings under Settings &gt; Summary Gateway. There is no data held by the Developer for you to request deletion of.</p>
 <p>To delete data that reached a destination you configured, contact whoever administers it — in most cases, you.</p>
 
 <h2>6. Your responsibilities when recording</h2>
