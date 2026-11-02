@@ -11,7 +11,7 @@
 <header>
   <p class="app"><a href="./">Voice Context</a></p>
   <h1>Privacy Policy</h1>
-  <p class="meta">Last updated: October 26, 2026 / Effective: August 24, 2026</p>
+  <p class="meta">Last updated: November 2, 2026 / Effective: August 24, 2026</p>
   <nav><a href="./">Home</a><a href="support/">Support</a><a href="terms.html">Terms of Use</a><a class="lang" href="../privacy.html">日本語</a></nav>
 </header>
 
@@ -48,7 +48,9 @@
 <p>Structuring is performed by <strong>a destination you configure yourself</strong>. If you configure none, the App stops after transcription and sends nothing anywhere. There are two kinds of destination.</p>
 
 <h3>(a) Your own Mac, over your local network</h3>
-<p>The App sends the transcript to your own Mac on the same network. The traffic does not traverse the internet and is protected by a key exchanged when you pair the devices. Processing takes place on that Mac.</p>
+<p>The App sends the transcript to your own Mac (the "desktop") on the same network. The traffic from your iPhone to the desktop does not traverse the internet and is encrypted with a key exchanged when you pair the devices.</p>
+<p>On the desktop, an AI command-line tool that you installed yourself (the Codex CLI or Claude Code) is started to structure the transcript. The transcript text is handed to that tool, and the tool sends it, under your account, to its provider (OpenAI for the Codex CLI, Anthropic for Claude Code). So even on this route, processing does not stay entirely on the desktop. How the data is handled after that is governed by the terms between you and that provider.</p>
+<p>The desktop stores the received transcript and the structured notes generated from it (when it runs as the standard background service, transcripts are deleted after 15 days by default). If you register this App's MCP server with an AI agent on the desktop (such as Codex or Claude Code), that agent can search and retrieve the stored structured notes, and can also retrieve a short excerpt of the transcript when you ask for evidence or a quotation. What the agent retrieves may be sent to that agent's provider.</p>
 
 <h3>(b) A Gateway you configure, over HTTPS</h3>
 <p>The App sends the transcript to a URL you enter. You choose that destination and you are responsible for it. In most setups it is a relay you run with your own API key, which passes the transcript on to an AI service such as OpenAI.</p>
